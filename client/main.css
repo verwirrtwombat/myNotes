@@ -1,0 +1,15 @@
+/* CSS declarations go here */
+.note-item {
+	width: 300px;
+	height: 300px;
+	min-width: 300px;
+	min-height: 300px;
+	max-width: 300px;
+	max-height: 300px;
+	background-color: #d6d6d6;
+	padding: 10px 10px 10px 10px;
+}
+
+.myNote-Title {
+	
+}

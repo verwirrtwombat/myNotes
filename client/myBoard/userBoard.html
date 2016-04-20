@@ -1,0 +1,18 @@
+<template name="myBoard">
+  <nav>
+   {{ > yield "navbar" }}
+ </nav>
+
+ 
+
+ <div id="image-cascade" class="container-fluid">
+  <div class="row">
+    <div id="note-item blackened-add" class="col-sm-3 note-item" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-plus"</span>
+    </div>
+      {{#each note}}
+      {{> userNote}}
+      {{/each}}
+    </div>
+  </div>
+</template>

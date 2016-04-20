@@ -1,0 +1,67 @@
+<template name="userNote">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal{{_id}}" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="expand-profile" class="container-fluid">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <div class="col-sm-6">
+
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                    for="title">Title</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" 
+                      id="inputEmail3" placeholder="Title"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                    for="content">Content</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="5" id="content" placeholder="content"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                    for="content">Keywords</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control"
+                      id="inputPassword3" placeholder="Keywords"/>
+                    </div>
+                  </div>
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default"
+                  data-dismiss="modal">
+                  Share
+                </button>
+                <button type="button" class="btn btn-default">
+                  Save changes
+                </button>
+                <button type="button" class="btn btn-default">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 col-sm-4 userNote" data-toggle="modal" data-target="#myModal{{_id}}">
+  <div class="note">
+    <h2>{{ Title }}</h2>
+    <p>{{ Content }}</p>
+    <p>{{ Keywords }}</p>
+  </div>
+</div>
+
+</template>
