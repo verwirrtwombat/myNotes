@@ -3,15 +3,64 @@
    {{ > yield "navbar" }}
  </nav>
 
- 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal{{_id}}" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="expand-profile" class="container-fluid">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                    for="title">Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="title" placeholder="Title">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                    for="content">Content</label>
+                    <div class="col-sm-10">
+                      <textarea type="text" class="form-control" rows="5" id="content" placeholder="Content"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="keywords">Keywords</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="keywords" placeholder="Keywords">
+                    </div>
+                  </div>
+                </form>
+                <div class="modal-footer">
+                  <button type="button" id="share" class="btn btn-default">
+                  Share
+                </button>
+                <button type="button" id="save" class="btn btn-default">
+                  Save changes
+                </button>
+                <button type="button" id="delete" class="btn btn-default">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
  <div id="image-cascade" class="container-fluid">
   <div class="row">
     <div id="note-item blackened-add" class="col-sm-3 note-item" data-toggle="modal" data-target="#myModal">
-      <span class="glyphicon glyphicon-plus"</span>
+      <span class="glyphicon glyphicon-plus"></span>
     </div>
-      {{#each note}}
-      {{> userNote}}
+      {{#each userNotes}}
+       {{> userNote}}
       {{/each}}
     </div>
   </div>
