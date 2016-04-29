@@ -1,0 +1,11 @@
+# chmod +x meteor.sh
+
+export MONGO_URL=mongodb://saltcola:Xavier@ds019970.mlab.com:19970/saltcola
+sleep 5
+meteor --settings settings.json
+
+export MONGO_URL=mongodb://cseemann:myNotesA100@ds025180.mlab.com:25180/myNotes
+sleep 5
+meteor  --port 2000
+
+

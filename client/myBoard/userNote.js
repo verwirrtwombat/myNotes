@@ -1,16 +1,31 @@
 Template.userNote.onCreated( function() {
-    Meteor.subscribe('userNotes');
+    Meteor.subscribe('allUserNotes');
 });
 
-Template.userNote.events({
+Template.userNote.events( {
         'submit form': function(event,template) {
             event.preventDefault();
-
-			let id = Meteor.userId();
-            let title = template.find('#title').value;
-            let content = template.find('#content').value;
-            let keywords = template.find('#keywords').value;
             
-            Meteor.call('editNotes', id, title, content, keywords);
+            let userNote = {
+                'userID' : Meteor.userId(),
+                'title' : template.find('#title').value,
+                'content' : template.find('#content').value,
+                'keywords' : template.find('#keywords').value
+            }
+
+            Meteor.call('addNotes', userNote);
+                        if(error){
+                console.log(error);
+            }  
+            else {
+                Router.go(userBoard);
+            }
         }
     });
+
+plate.userNote.helpers({    
+   
+    'userNotes': function(){
+        return UserNotes.findOne({'userID' : Meteor.userId()});
+    },
+});

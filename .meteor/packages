@@ -22,3 +22,4 @@ iron:router
 dburles:collection-helpers
 accounts-password
 accounts-ui
+autopublish
