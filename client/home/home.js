@@ -15,7 +15,7 @@ Template.register.events({
             if(!err) {
                 console.log(error.reason);
             } else {
-                Router.go('userBoard');
+                Router.go('myBoard');
             }
         });
     }
@@ -35,7 +35,7 @@ Template.login.events({
             if(!err) {
                 console.log(error.reason);
             }  else {
-                Router.go('userBoard');
+                Router.go('myBoard');
             }
         });
     }

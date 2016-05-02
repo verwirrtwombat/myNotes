@@ -1,4 +1,19 @@
 /* CSS declarations go here */
+
+body {
+	background: url(https://static.pexels.com/photos/5299/black-and-white-apple-iphone-smartphone.jpg);
+    background-size: auto;
+}
+
+.home {
+  text-align: center;
+}
+
+.main {
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
 .note-item {
 	width: 300px;
 	height: 300px;

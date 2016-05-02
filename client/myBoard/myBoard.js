@@ -1,8 +1,7 @@
  Template.myBoard.helpers({
-        notes: function() {
-            userID = Meteor.user().userID
-            console.log(userID)
-            return Notes.find({'userID':userID});
-        }
-        
-    });
+ 	notes: function() {
+ 		email = Meteor.user().emails[0].address;
+ 		console.log(email)
+ 		return Notes.find({'email':email});
+ 	}
+ });

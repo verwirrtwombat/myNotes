@@ -20,5 +20,8 @@ Template.newNote.events = {
                 userID : userID,
                 email : email
             });
+        
+        Router.go('myBoard');
+
         }
     };

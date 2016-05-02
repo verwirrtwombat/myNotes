@@ -3,10 +3,10 @@
    {{ > yield "navBar" }}
  </nav>
 
- <div id="image-cascade" class="container-fluid">
+ <div id="image-cascade" class="container-fluid center-block main">
   <div class="row">
-      {{#each userNotes}}
-       {{> userNote}}
+      {{#each notes}}
+       {{>myNote}}
       {{/each}}
     </div>
   </div>
