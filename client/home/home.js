@@ -3,15 +3,13 @@ Template.register.events({
 
         event.preventDefault();
 
+        let userID = Meteor.userId();
         let email = template.find('#email').value;
         let password = template.find('#password').value;
         
         console.log(email)
 
-        Accounts.createUser({
-            email : email,
-            password: password
-        });
+        Meteor.call('create', userID, email, password);
 
         Meteor.loginWithPassword (email, password, function(err) {
             if(!err) {
@@ -30,8 +28,10 @@ Template.login.events({
 
         let email = template.find('#email').value;
         let password = template.find('#password').value;
+
         console.log(email);
-        Meteor.loginWithPassword(email, password, function(err){
+        
+        Meteor.loginWithPassword(email, password, function(err) {
             if(!err) {
                 console.log(error.reason);
             }  else {
