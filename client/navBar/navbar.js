@@ -9,3 +9,5 @@ Template.navBar.events({
         Router.go('home');
     }
 });
+
+//Items.find({"description": {$regex: ".*" + variable + ".*"}}).fetch();
