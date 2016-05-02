@@ -1,21 +1,14 @@
-Meteor.publish('userNote', function( userID ) {
+import { Meteor } from 'meteor/meteor';
 
-	if(userID){
-		return [
-			UserNotes.find( { 'id': userID } ),
-		];
-	}
-	else {
-		return null;
-	}
-});
+Meteor.startup(() => {
 
-Meteor.publish('allUserNotes', function() {
-	return UserNotes.find();
-});
+	Meteor.methods({
+		'create': function(username,email, password) {
+			Accounts.createUser({
+				email: email,
+				password: password
+			});
+		},
+	});
 
-Meteor.publish('userNotesByUserID', function( userID ) {
-	
-	return UserNotes.find( { 'userID': userID } ); 
-	
-});  
+})

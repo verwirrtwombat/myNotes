@@ -1,7 +1,3 @@
-Template.userNote.onCreated( function() {
-    Meteor.subscribe('allUserNotes');
-});
-
 Template.userNote.events( {
         'submit form': function(event,template) {
             event.preventDefault();
@@ -23,7 +19,7 @@ Template.userNote.events( {
         }
     });
 
-plate.userNote.helpers({    
+Template.userNote.helpers({    
    
     'userNotes': function(){
         return UserNotes.findOne({'userID' : Meteor.userId()});

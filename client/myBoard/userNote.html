@@ -1,5 +1,4 @@
 <template name="userNote">
-
   <!-- Modal -->
   <div class="modal fade" id="myModal{{_id}}" role="dialog">
     <div class="modal-dialog">
@@ -10,8 +9,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
               <div class="col-sm-6">
-
-                <form class="form-horizontal" role="form">
+              <form class="form-horizontal" role="form">
                   <div class="form-group">
                     <label  class="col-sm-2 control-label"
                     for="title">Title</label>
@@ -35,19 +33,19 @@
                       id="keywords" placeholder="Keywords"/>
                     </div>
                   </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default"
-                  data-dismiss="modal">
-                  Share
-                </button>
-                <button type="button" class="btn btn-default">
-                  Save changes
-                </button>
-                <button type="button" class="btn btn-default">
-                  Delete
-                </button>
-              </div>
-                              </form>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                    data-dismiss="modal">
+                    Share
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Save changes
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Delete
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -63,5 +61,4 @@
     <p>{{ Keywords }}</p>
   </div>
 </div>
-
 </template>
