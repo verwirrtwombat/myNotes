@@ -11,10 +11,8 @@
                 {{#if currentUser}} 
                 <li><a href="newNote">newNote</a></li>
                 <li><a href="myBoard">myBoard</a></li>
-                {{/if}}
             </ul>
             <ul class="main-navbar-right nav navbar-nav">
-                {{#if currentUser}} 
                 <li>
                     <form class="navbar-form" role="search">
                         <div class="input-group">
@@ -25,6 +23,8 @@
                         </div>
                     </form>
                 </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 <li><a href="home" name="logout" id="logout" class="logout">Logout</a></li>
                 {{else}}
                 <li><a href="login">Login</a></li>
