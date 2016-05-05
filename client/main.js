@@ -1,2 +1,2 @@
-Meteor.subscribe("notes");
-Meteor.subscribe("users");
+// Meteor.subscribe("notes");
+// Meteor.subscribe("users");
