@@ -3,6 +3,7 @@
 body {
 	background: url(https://static.pexels.com/photos/5299/black-and-white-apple-iphone-smartphone.jpg);
     background-size: auto;
+    margin-bottom: 100px;
 }
 
 .home {
@@ -26,7 +27,8 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 	padding: 30px, 30px, 30px, 30px;
-	margin-left: 37px;
+	margin-left: 35px;
+	margin-top: 35px;
 	border-radius: 5px;
 }
 
@@ -46,4 +48,5 @@ body {
 
 .keywords {
 	height: 50px;
+	font-weight: bold;
 }
