@@ -13,38 +13,40 @@
                 <div class="form-group">
                   <label  class="col-sm-4 control-label" for="title">Title</label>
                   <div class="col-sm-8">
-                    <input type="email" class="form-control" id="title" placeholder={{title}}/>
+                    <input class="form-control" id="title" value="{{title}}"/>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-4 control-label" for="content">Content</label>
                   <div class="col-sm-8">
-                    <textarea class="form-control" rows="5" id="content" placeholder="{{content}}"></textarea>
+                    <textarea class="form-control" rows="5" id="content" value="{{content}}"></textarea>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-4 control-label" for="keywords">Keywords</label>
                   <div class="col-sm-8">
-                    <input type="keywords" class="form-control" id="keywords" placeholder="{{keywords}}">
+                    <input type="keywords" class="form-control" id="keywords" value="{{keywords}}">
                   </div>
                 </div>
                 <div class="modal-footer">
-                 <div class="form-group">
-                  <label class="col-sm-4 control-label" for="share">Email</label>
-                  <div class="col-sm-8">
-                    <input type="share" class="form-control" id="share" placeholder="Email">
-                  </div>
-                </div>                   
+                  <button type="button update" id="update" class="btn btn-default">
+                    Save changes
+                  </button>
+                  <button type="button delete" id="delete" class="btn btn-default">
+                    Delete
+                  </button>
+                </div>
+              </form>
+              <form>
+               <div class="form-group">
+                <label class="col-sm-4 control-label" for="share">Share</label>
+                <div class="col-sm-8">
+                  <input type="share" class="form-control" id="share" placeholder="Email">
+                </div>
+              </div>
+              <div class="modal-footer">                   
                 <button type="button share" id="share" class="btn btn-default" data-dismiss="modal">
                   Share
-                </button>
-              </div>
-              <div class="modal-footer">
-                <button type="button submit" id="submit" class="btn btn-default">
-                  Save changes
-                </button>
-                <button type="button delete" id="delete" class="btn btn-default">
-                  Delete
                 </button>
               </div>
             </form>
@@ -57,9 +59,15 @@
 
 <div class="col-sm-12 myNote main" data-toggle="modal" data-target="#myModal{{_id}}">
   <div class="note">
-    <h2>{{ Title }}</h2>
-    <p>{{ Content }}</p>
-    <p>{{ Keywords }}</p>
+    <div id="title" class="title">
+      <h2>{{ title }}</h2>
+    </div>
+    <div id="content" class="content">
+      <p>{{ content }}</p>
+    </div>
+    <div id="keywords" class="keywords">
+      <p>{{ keywords }}</p>
+    </div>
   </div>
 </div>
 </template>

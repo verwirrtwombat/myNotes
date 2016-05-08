@@ -7,6 +7,7 @@
             <a class="navbar-brand" href="Home">myNotes</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            {{#if currentUser}}
             <ul class="nav navbar-nav">
                 <li><a href="newNote">newNote</a></li>
                 <li><a href="myBoard">myBoard</a></li>
@@ -24,9 +25,13 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="home" name="logout" id="logout" class="logout">Logout</a></li>
-                <li><a href="login">Login</a></li>
+                <li><a href="home" name="logout" id="logout" class="logout">Logout  </a></li>
             </ul>
+            {{else}}
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login">Login  </a></li>
+            </ul>
+            {{/if}}
         </div>
     </div>
 </template>

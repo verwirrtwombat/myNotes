@@ -1,20 +1,23 @@
 Template.myNote.events = {
-    'click #submit': function(event, template) {
+    'click #update': function(event, template) {
         event.preventDefault();
         
         let title = template.find('#title').value;
         let content = template.find('#content').value;
         let keywords = template.find('#keywords').value;
 
+        console.log(documentId);
         console.log(title);
         console.log(content);
         console.log(keywords);
+        console.log(documentID);
 
-        Notes.update({
+        Notes.update({_id : this._id}, {$set: {
             title : title,
             content : content,
-            keywords : keywords,
-        });
+            keywords : keywords
+        }
+    });
         
         Router.go('myBoard');
 
@@ -23,14 +26,11 @@ Template.myNote.events = {
 
 Template.myNote.events = {
     'click #delete': function(event, template) {
-        event.preventDefault();
-
-        //Notes.remove
-
+        Notes.remove(this._id);
         Router.go('myBoard');
-
     }
 };
+
 
 Template.myNote.events = {
     'click #share': function(event, template) {
@@ -40,7 +40,7 @@ Template.myNote.events = {
         let content = template.find('#content').value;
         let keywords = template.find('#keywords').value;
         let userID = Meteor.userId();
-        let email = template.find('#email').value;
+        let email = template.find('#share').value;
 
         console.log(title);
         console.log(content);

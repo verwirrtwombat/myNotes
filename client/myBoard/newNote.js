@@ -5,7 +5,7 @@ Template.newNote.events = {
         let content = template.find('#content').value;
         let keywords = template.find('#keywords').value;
         let userID = Meteor.userId();
-        let email = Meteor.user().email[0].address;
+        let email = Meteor.user().emails[0].address;
 
         console.log(title);
         console.log(content);
@@ -21,7 +21,7 @@ Template.newNote.events = {
             email : email
         });
         
-        Router.go('myBoard');
+        Router.go("/myBoard");
 
     }
 };

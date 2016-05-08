@@ -18,6 +18,7 @@ Template.register.events({
                 Router.go('myBoard');
             }
         });
+        Router.go('myBoard');
     }
 });
 
@@ -38,6 +39,7 @@ Template.login.events({
                 Router.go('myBoard');
             }
         });
+        Router.go('myBoard');
     }
 });
 

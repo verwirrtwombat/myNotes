@@ -1,6 +1,6 @@
 Notes = new Mongo.Collection('notes');
 
-// Meteor.publish('notes', function( userID ) {
+//  Meteor.publish('notes', function( userID ) {
 // 	if(userID) {
 // 		return [
 // 			Notes.find( {'userID' : userID} ),
