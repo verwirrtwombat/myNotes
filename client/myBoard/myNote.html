@@ -7,10 +7,11 @@
         <div class="modal-body">
           <div id="expand-profile" class="container-fluid">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <br>
+
             <div class="row">
               <form class="form-horizontal" role="form">
                 <div class="form-group">
+                <br><br>
                   <label  class="col-sm-4 control-label" for="title">Title</label>
                   <div class="col-sm-8">
                     <input class="form-control" id="title" value="{{title}}"/>
@@ -28,29 +29,31 @@
                     <input type="keywords" class="form-control" id="keywords" value="{{keywords}}">
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button update" id="update" class="btn btn-default">
+                <div>
+                  <button type="button update" id="update" class="btn btn-default pull-right" data-dismiss="modal">
                     Save changes
                   </button>
-                  <button type="button delete" id="delete" class="btn btn-default">
+                  <button type="button delete" id="delete" class="btn btn-default pull-right" data-dismiss="modal">
                     Delete
                   </button>
-                </div>
+                  <br>
+                  </div>
               </form>
-              <form>
+
+              <form class="form-horizontal" role="form">
                <div class="form-group">
+               <br>
                 <label class="col-sm-4 control-label" for="share">Share</label>
                 <div class="col-sm-8">
                   <input type="share" class="form-control" id="share" placeholder="Email">
                 </div>
-              </div>
-              <div class="modal-footer">                   
-                <button type="button share" id="share" class="btn btn-default" data-dismiss="modal">
+              </div>                 
+                <button type="button share" id="share" class="btn btn-default pull-right" data-dismiss="modal">
                   Share
                 </button>
-              </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>
