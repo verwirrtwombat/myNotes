@@ -6,12 +6,15 @@ body {
     margin-bottom: 100px;
 }
 
-.home {
-  text-align: center;
+.navbar-default {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
 }
 
-.navbar-nav.navbar-right:last-child {
-    margin-right: 0;
+
+
+.home {
+  text-align: center;
 }
 
 .main {
@@ -49,4 +52,5 @@ body {
 .keywords {
 	height: 50px;
 	font-weight: bold;
+	font-style: italic;
 }
