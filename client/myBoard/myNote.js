@@ -25,7 +25,7 @@ Template.myNote.events = {
 };
 
 Template.myNote.events = {
-    'click #delete': function(event) {
+    'click #delete': function(event, template) {
         Notes.remove(this._id);
         Router.go('myBoard');
     }

@@ -3,7 +3,7 @@
 body {
 	background: url(https://static.pexels.com/photos/5299/black-and-white-apple-iphone-smartphone.jpg);
     background-size: auto;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .navbar-default {
@@ -12,13 +12,28 @@ body {
 }
 
 .home {
-  text-align: center;
+ 	text-align: center;
+}
+
+.login {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.register {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.myboard {
+	width: 100%;
+	margin-left: 20px;
 }
 
 .newNote {
 	margin-top: 35px;
-	padding-right: 5px;
-	padding-left: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .myNote {
@@ -31,7 +46,7 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 	padding: 30px, 30px, 30px, 30px;
-	margin-left: 50px;
+	margin-left: 40px;
 	margin-top: 40px;
 	border-radius: 5px;
 }
@@ -57,3 +72,21 @@ body {
 	font-style: italic;
 	padding-left: 5px;
 }
+
+/*.center-block {  
+  display: block !important;
+  text-allign: center !important;  
+  margin-right: auto !important;  
+  margin-left: auto !important;  
+}
+
+.center {
+  margin: 0 auto !important;
+  float: center !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}*/
+
