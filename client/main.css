@@ -1,8 +1,7 @@
-/* CSS declarations go here */
-
 body {
 	background: url(https://static.pexels.com/photos/5299/black-and-white-apple-iphone-smartphone.jpg);
     background-size: auto;
+    padding-top: 50px;
     margin-bottom: 150px !important;
 }
 
