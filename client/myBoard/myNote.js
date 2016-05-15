@@ -1,19 +1,19 @@
 Template.myNote.events = {
-    'click #update': function(event, template) {
-        // event.preventDefault();
+    // 'click #update': function(event, template) {
+    //     event.preventDefault();
         
-        // let title = template.find('#title').value;
-        // let content = template.find('#content').value;
-        // let keywords = template.find('#keywords').value;
+    //     let title = template.find('#title').value;
+    //     let content = template.find('#content').value;
+    //     let keywords = template.find('#keywords').value;
 
-        // Notes.update() {
-        //     title : title,
-        //     content : content,
-        //     keywords : keywords
-    };
+    //     Notes.update(this._id) { //update doesnt work
+    //         title : title,
+    //         content : content,
+    //         keywords : keywords
+    //     }
 
-        Router.go('myBoard');
-    },
+    //     Router.go('myBoard');
+    // },
 
     'click #delete': function(event, template) {
         event.preventDefault();

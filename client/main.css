@@ -3,7 +3,7 @@
 body {
 	background: url(https://static.pexels.com/photos/5299/black-and-white-apple-iphone-smartphone.jpg);
     background-size: auto;
-    margin-bottom: 150px;
+    margin-bottom: 150px !important;
 }
 
 .navbar-default {
@@ -25,13 +25,16 @@ body {
 	padding-left: 10px;
 }
 
-.myboard {
+.myBoard {
 	width: 100%;
-	margin-left: 20px;
+    margin-top: 40px !important;
+	margin-bottom: 150px !important;
+	float: center;
 }
 
 .newNote {
 	margin-top: 35px;
+	margin-left: 15px;
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -46,8 +49,10 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 	padding: 30px, 30px, 30px, 30px;
-	margin-left: 40px;
-	margin-top: 40px;
+	margin-left: 35px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 5px;
 }
 
